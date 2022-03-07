@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/fodmap/static/css/main.b78e6e51.css",
-    "main.js": "/fodmap/static/js/main.aacb51a5.js",
+    "main.css": "/fodmap/static/css/main.a03a9ad1.css",
+    "main.js": "/fodmap/static/js/main.455bacfb.js",
     "static/js/787.5414b8ce.chunk.js": "/fodmap/static/js/787.5414b8ce.chunk.js",
     "static/media/sayKaren_logo-white_8.1.2019.png": "/fodmap/static/media/sayKaren_logo-white_8.1.2019.a59cbdb06e5db37017af.png",
     "index.html": "/fodmap/index.html",
-    "main.b78e6e51.css.map": "/fodmap/static/css/main.b78e6e51.css.map",
-    "main.aacb51a5.js.map": "/fodmap/static/js/main.aacb51a5.js.map",
+    "main.a03a9ad1.css.map": "/fodmap/static/css/main.a03a9ad1.css.map",
+    "main.455bacfb.js.map": "/fodmap/static/js/main.455bacfb.js.map",
     "787.5414b8ce.chunk.js.map": "/fodmap/static/js/787.5414b8ce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b78e6e51.css",
-    "static/js/main.aacb51a5.js"
+    "static/css/main.a03a9ad1.css",
+    "static/js/main.455bacfb.js"
   ]
 }
