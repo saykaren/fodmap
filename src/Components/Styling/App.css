@@ -9,6 +9,7 @@
   --light-color: white;
   --dark-color: #282c34;
   --greyed: rgba(255, 255, 255, 0.884);
+  --avoid: #FF7F7F;
 }
 
 body {
@@ -33,4 +34,12 @@ body {
 
 .App-link {
   color: var(--secondary-color);
+}
+
+.include_title{
+  color: var(--secondary-color)
+}
+
+.avoid_title{
+  color: var(--avoid);
 }

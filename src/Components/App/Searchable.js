@@ -1,15 +1,15 @@
 import React from "react";
-import fodmapData from "../Data/Data";
 
 class Searchable extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      names: fodmapData.map((x) => x.gameName),
-      data: fodmapData,
-      searchTerm: "",
-    };
+        data: props.data,
+        title: props.title,
+        className: props.className,
+        searchTerm: "",
+    }
   }
 
   editSearchTerm = (e) => {
@@ -18,26 +18,24 @@ class Searchable extends React.Component {
 
   dynamicSearch = () => {
     return this.state.data.filter((name) =>
-      name.gameName.toLowerCase().includes(this.state.searchTerm.toLowerCase())
+      name.name.toLowerCase().includes(this.state.searchTerm.toLowerCase())
     );
   };
 
   render() {
     return (
-      <div className="searchable">
+      <div className={`${this.state.className} searchable`}>
         <input
           type="text"
           value={this.state.searchTerm}
           onChange={this.editSearchTerm}
-          placeholder="Search for a name!"
+          placeholder={`Search ${this.state.className} foods`}
         />
-        <br></br>
-        <h3>Foods</h3>
-
-        <div className="dataList">
+        <div className={`${this.state.className}_title`}>{this.state.title}</div>
+        <div className={`${this.state.className} dataList`}>
           {this.dynamicSearch().map((x) => (
-            <div className="dataItem">
-              {x.nintendoNumber}.{x.gameName}
+            <div className={`${this.state.className}_dataItem`}>
+              {x.name}
             </div>
           ))}
         </div>
